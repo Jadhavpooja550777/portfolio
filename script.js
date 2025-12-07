@@ -44,17 +44,12 @@ if (downloadCVBtn) {
         e.preventDefault();
         showToast('Opening your resume...');
         
-        // Google Drive direct download link - Updated for better reliability
+        // Google Drive direct download link
         const fileId = '1-zbV2bpfaI-JaxLVBmgEKqAEqWyLmJZr';
         const gdriveDirect = `https://drive.google.com/uc?export=download&id=${fileId}`;
         
-        // Create a temporary link and trigger download
-        const link = document.createElement('a');
-        link.href = gdriveDirect;
-        link.download = 'Pooja_Jadhav_Resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        // Open in new tab to trigger download
+        window.location.href = gdriveDirect;
     });
 }
 
