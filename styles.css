@@ -2,27 +2,27 @@
    Custom Color Variables
    ======================== */
 :root {
-    --primary-color: #0f3d66;
-    --secondary-color: #1a5490;
-    --accent-color: #0084d1;
-    --light-bg: #f5f7fa;
-    --dark-text: #1a1a1a;
-    --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --accent-color: #0ea5e9;
+    --light-bg: #f0f9ff;
+    --dark-text: #1e293b;
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
     
     /* Light Mode */
     --light-bg-primary: #ffffff;
-    --light-bg-secondary: #f5f7fa;
-    --light-text-primary: #1a1a1a;
-    --light-text-secondary: #666666;
-    --light-border: #e8eef5;
+    --light-bg-secondary: #f0f9ff;
+    --light-text-primary: #1e293b;
+    --light-text-secondary: #64748b;
+    --light-border: #cbd5e1;
     
     /* Dark Mode */
-    --dark-bg-primary: #0f1419;
-    --dark-bg-secondary: #1a1f2e;
-    --dark-text-primary: #ffffff;
-    --dark-text-secondary: #b0b8c8;
-    --dark-border: #2a3344;
+    --dark-bg-primary: #0f172a;
+    --dark-bg-secondary: #1e293b;
+    --dark-text-primary: #f1f5f9;
+    --dark-text-secondary: #cbd5e1;
+    --dark-border: #334155;
 }
 
 /* Dark Mode Styles */
@@ -177,7 +177,7 @@ html {
    Hero Section
    ======================== */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, #0d6ba3 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #0ea5e9 50%, #06b6d4 100%);
     color: white;
     min-height: 80vh;
     display: flex;
@@ -350,14 +350,14 @@ html {
     align-items: center;
     gap: 12px;
     padding: 12px 32px;
-    background: linear-gradient(135deg, #0084d1 0%, #005fa3 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
     color: white;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.05rem;
     transition: var(--transition);
-    box-shadow: 0 8px 25px rgba(0, 132, 209, 0.35);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -375,7 +375,7 @@ html {
 
 .download-cv-btn:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 35px rgba(0, 132, 209, 0.45);
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.4);
 }
 
 .download-cv-btn:hover::before {
@@ -479,7 +479,7 @@ html {
 
 .skill-card {
     background: white;
-    border: 2px solid #d4dce8;
+    border: 2px solid #cbd5e1;
     border-radius: 12px;
     transition: var(--transition);
     box-shadow: var(--card-shadow);
@@ -609,7 +609,7 @@ html {
 
 .education-card {
     background: white;
-    border: 2px solid #d4dce8;
+    border: 2px solid #cbd5e1;
     border-radius: 8px;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
@@ -623,7 +623,7 @@ html {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, #0f3d66, #0084d1);
+    background: linear-gradient(90deg, #2563eb, #0ea5e9);
 }
 
 .education-card:hover {
@@ -1032,7 +1032,7 @@ body.dark-mode .form-textarea {
    Footer
    ======================== */
 footer {
-    background: linear-gradient(135deg, #0f3d66 0%, #1a5490 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
     color: white;
     text-align: center;
     padding: 2rem 0;
