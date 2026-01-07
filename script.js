@@ -44,12 +44,11 @@ if (downloadCVBtn) {
         e.preventDefault();
         showToast('Opening your resume...');
         
-        // Google Drive direct download link
-        const fileId = '1-zbV2bpfaI-JaxLVBmgEKqAEqWyLmJZr';
-        const gdriveDirect = `https://drive.google.com/uc?export=download&id=${fileId}`;
+        // Local resume file
+        const resumePath = 'resume/pooja_jadhav_cloud_Exp-4.9Years (2).pdf';
         
         // Open in new tab to trigger download
-        window.location.href = gdriveDirect;
+        window.open(resumePath, '_blank');
     });
 }
 
